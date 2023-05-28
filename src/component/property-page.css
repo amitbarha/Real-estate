@@ -1,0 +1,149 @@
+.property-page {
+    display: grid;
+    grid-template-columns: repeat(12, 10vw);
+    grid-template-rows: repeat(4, 0.5fr);
+    
+}
+
+#div-img {
+   grid-column: 2/10;
+}
+
+#property-img {
+    width: 80vw;
+    height: 25vw;
+}
+
+#details {
+    grid-column: 2/8;
+    
+
+    
+}
+.none{
+    display: none;
+}
+#adress-grid{
+font-size: 2vw;
+}
+#street-grid{
+    font-weight: bold;
+}
+.price-grid{
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: math;
+    width: 28vw;
+}
+.bed-bath-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.num-bed-bath{
+    font-weight: bold;
+    font-size: 2vw;
+}
+.house-details-grid{
+    display: flex;
+    justify-content:space-around ;
+}
+
+#about {
+    margin-top: 2vw;
+    grid-row: 3/6;
+    grid-column: 2/8;
+    font-size: 2vw;
+
+}
+#agent{
+    grid-column: 8/10;
+    grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(19, 224, 50, 0.281) ;
+    border-radius: 2vw;
+    border-style: solid;
+    border-color: rgb(1, 243, 37) ;
+}
+#circle{
+    height: 1vw;
+    width: 1vw;
+    background-color: green;
+    border-radius: 50%;
+}
+#circle-rent{
+    height: 1vw;
+    width: 1vw;
+    background-color: rgb(0, 21, 128);
+    border-radius: 50%;
+}
+#status{
+    display: flex;
+    align-items: center;
+}
+#active{
+    margin-left: 1vw;
+    font-size: 2vw;
+    color: rgb(95, 95, 95);
+    font-family:cursive
+}
+#liked{
+    position: relative;
+    left: 2vw;
+}
+#zillow-property{
+    position: relative;
+    left: 3vw;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgb(21, 128, 0);
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(2, 128, 0);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+  .form-visit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputs-form{
+    width: 19vw;
+  }
